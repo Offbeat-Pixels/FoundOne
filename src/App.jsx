@@ -23,6 +23,7 @@ import buySell from  "./assets/buySell.png"
 import landDeals from  "./assets/landDeals.png"
 import CommercialOffice from  "./assets/CommercialOffice.png"
 import ResidentialProperty from "./assets/ResidentialProperty.png";
+import Banner from "./assets/Banner2.png";
  
 
 
@@ -71,14 +72,14 @@ const salesProducts = [
 
 function App() {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       {/* Hero Section */}
 
       <section
-        className=" h-screen "
+        className=" h-fit "
         style={{
-          backgroundImage: `url("./src/assets/Banner.png")`,
-          backgroundPosition: "-630%",
+          backgroundImage: `url(${Banner})`,
+          backgroundPosition: "right center",
           backgroundRepeat: "no-repeat",
         }}
       >
@@ -127,14 +128,14 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="px-5 md:px-20 flex max-w-2xl  py-40 motion-translate-x-in-[2%] motion-translate-y-in-[102%] motion-ease-spring-smooth">
+        <div className="px-5 md:px-20 flex max-w-2xl py-20 2xl:py-40 motion-translate-x-in-[2%] motion-translate-y-in-[102%] motion-ease-spring-smooth">
           <div>
             <p className="text-4xl md:text-6xl font-extrabold">Welcome to</p>
             <p className="text-6xl md:text-8xl font-extrabold pb-10">
               Found One
             </p>
             <div className="text-lg text-justify pb-10">
-              <p className="text-2xl">
+              <p className="text-2xl italic">
                 "Simplifying property decisions for you"{" "}
               </p>
               <p>
@@ -250,7 +251,7 @@ function App() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center mx-auto md:mx-0 space-x-3 p-4 w-80 bg-black  rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105"
+                    className="flex items-center mx-auto md:mx-0 space-x-3 p-4 w-80 bg-[#D44829]  rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105"
                   >
                     <CheckCircle2 className="h-6 w-6 text-[#F0B624]" />
                     <span className="text-lg text-white">{item}</span>
@@ -267,7 +268,7 @@ function App() {
                   (item, index) => (
                     <div
                       key={index}
-                      className="flex items-center w-80 space-x-3  mx-auto md:mx-0  p-4 bg-black rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105"
+                      className="flex items-center w-80 space-x-3  mx-auto md:mx-0  p-4 bg-[#D44829] rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105"
                     >
                       <Warehouse className="h-6 w-6 text-[#F0B624]" />
                       <span className="text-lg text-white">{item}</span>
